@@ -34,6 +34,7 @@ body{
 
 .porfolio{
     text-align: center;
+    margin-top: 40px;
 }
 
 .card-btn{
@@ -46,6 +47,11 @@ body{
 .code-cont{
     width: 50%;
 }
+
+.btn-container{
+        flex-wrap: wrap;
+}
+
 .my-edu{
     width: 50%;
     text-align: center;
@@ -103,9 +109,35 @@ form{
         margin-bottom: 20px;
     }
 
-    .btn-container{
-        flex-wrap: wrap;
+    
+}
+
+@media screen and (min-width: 577px) and (max-width:768px) {
+    body{
+        margin: 0 auto;
     }
+
+    .profile-container, .card-container, #education{
+        flex-direction: column;
+    }
+
+    .profile-container .profile-img, .my-edu{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #education{
+        flex-direction: column;
+    }
+    .my-edu{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }
 
 
